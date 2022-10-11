@@ -17,13 +17,20 @@
     "moduleResolution": "node",
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "jsx": "preserve"
+    "jsx": "preserve",
+    "baseUrl": ".",
+    "paths": {
+      "@/components/*": ["components/*"],
+      "@/layout/*": ["layout/*"],
+      "@/test/*": ["test/*"],
+      "@/public/*": ["public/*"]
+    },
   },
   "include": [
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx"
-  ],
+, "components/icons/index.js"  ],
   "exclude": [
     "node_modules"
   ]
